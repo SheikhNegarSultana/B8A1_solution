@@ -35,3 +35,22 @@ const concatenateArrays = <T> (...arrays: T[][]) : T[] =>{
     }
     return concat
 } 
+
+
+interface Course {
+    title : string,
+    students : number,
+    isPublished : boolean
+}
+
+
+const getPopularCourses = ( courses : Course[], minStudents: number ) : Course[]  => {
+    let course : Course[] = []
+
+     for( let c in courses){
+        if(courses[c].isPublished && courses[c].students >= minStudents){
+            course.push(courses[c])
+        }
+    }
+    return [...course]
+} 
