@@ -56,10 +56,5 @@ const getPopularCourses = ( courses : Course[], minStudents: number ) : Course[]
 } 
 
 
-const pluckValues = <T, K extends keyof T>(items: T[], key: K) : (T[K][]) =>{
- let p_v : T[K][] = [];
- for( let i of items){
-    p_v.push(i[key])
- }
- return p_v
-}
+
+
