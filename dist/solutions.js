@@ -28,4 +28,11 @@ const processInput = (value) => {
 const formatCoordinate = ([latitude, longitude, locationName]) => {
     return `Location: ${locationName} (${latitude}, ${longitude})`;
 };
+const concatenateArrays = (...arrays) => {
+    let concat = [];
+    for (let i of [...arrays]) {
+        concat.push(...i);
+    }
+    return concat;
+};
 export {};
