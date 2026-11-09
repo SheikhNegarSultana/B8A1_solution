@@ -25,4 +25,7 @@ const processInput = (value) => {
         }
     }
 };
+const formatCoordinate = ([latitude, longitude, locationName]) => {
+    return `Location: ${locationName} (${latitude}, ${longitude})`;
+};
 export {};

@@ -22,3 +22,8 @@ const processInput = ( value :  string | number |  boolean) : (string | number) 
     }
 
 }
+
+
+const formatCoordinate = (  [latitude, longitude, locationName] : readonly  [number, number, string]) : string =>{
+    return `Location: ${locationName} (${latitude}, ${longitude})`
+}
